@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Terraform Validate') {
+        stage('terra Validate') {
             steps {
                 sh 'echo "Started ...!" '
             }
@@ -11,19 +11,19 @@ pipeline {
                 sh 'echo "Cloning..." '
             }
         }
-        stage ('Terraform Plan') {
+        stage ('terra Plan') {
             steps {
-                sh 'echo "Terraform Plan.." '
+                sh 'echo "terra Plan.." '
             }
         }
-        stage ('Terraform Approve') {
+        stage ('terra Approve') {
             steps {
                 sh 'echo "Approve the Infrastructure."'
             }
         }
-        stage ('Terraform Apply'){
+        stage ('terra Apply'){
             steps {
-                sh 'echo "Terraform Apply"'
+                sh 'echo "terra Apply"'
             }
         }
     }
