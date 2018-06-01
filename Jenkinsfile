@@ -4,7 +4,6 @@ pipeline {
         stage('terra Validate') {
             steps {
                 sh 'echo "Started ...!" '
-		terraform init
             }
         }
         stage ('Git Clone') {
