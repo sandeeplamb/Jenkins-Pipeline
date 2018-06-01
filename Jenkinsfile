@@ -4,6 +4,7 @@ pipeline {
         stage('terra Validate') {
             steps {
                 sh 'echo "Started ...!" '
+		terraform init
             }
         }
         stage ('Git Clone') {
@@ -14,6 +15,7 @@ pipeline {
         stage ('terra Plan') {
             steps {
                 sh 'echo "terra Plan.." '
+		terraform plan
             }
         }
         stage ('terra Approve') {
