@@ -14,7 +14,6 @@ pipeline {
         stage ('terra Plan') {
             steps {
                 sh 'echo "terra Plan.." '
-		terraform plan
             }
         }
         stage ('terra Approve') {
