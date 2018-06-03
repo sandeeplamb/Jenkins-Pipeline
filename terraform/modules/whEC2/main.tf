@@ -8,7 +8,8 @@ resource "aws_instance" "moduleEC2Instance" {
         subnet_id               = "subnet-abf82ad1"
         source_dest_check       = false
         associate_public_ip_address = true
-        security_groups         =  ["${element(var.sg_out, count.index)}"]
+        vpc_security_group_ids      =  ["${element(var.sg_out, count.index)}"]
+        #security_groups         =  ["${element(var.sg_out, count.index)}"]
         #security_group         =  "${var.sg_out}"
         key_name                = "aws-sandbox"
 
