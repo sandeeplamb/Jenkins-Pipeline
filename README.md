@@ -2,6 +2,4 @@
 
 ### Making Jenkins Automated
 
-### Adding
-
 ### Terraform
